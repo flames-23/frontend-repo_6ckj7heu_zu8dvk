@@ -1,12 +1,15 @@
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import FeaturedCourses from './components/FeaturedCourses';
+import Testimonials from './components/Testimonials';
 import Community from './components/Community';
 import Footer from './components/Footer';
 
 function App() {
   return (
     <div style={{ backgroundColor: '#F5EDE0' }} className="min-h-screen text-slate-800">
+      <Navbar />
       <Hero />
       <About />
       <FeaturedCourses />
@@ -55,7 +58,10 @@ function App() {
         </div>
       </section>
 
-      <Community />
+      <Testimonials />
+      <section id="community">
+        <Community />
+      </section>
       <Footer />
     </div>
   );
